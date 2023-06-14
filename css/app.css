@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.row {
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 400px;
+}
+
+.naveg {
+    padding-top: 15px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.border-sides {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.link:hover {
+    color: yellow;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    transition: all 0.2s;
+}
+
+header {
+    color: white;
+    min-height: 50vh;
+    background-image: url(../img/BasílicaAP.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.foto {
+    border: 1px transparent;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 10vh;
+}
+
+video {
+    width: 600px;
+}
+
+.vd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/bg-azul-degradê2.png);
+    background-position: bottom;
+}
+
+footer {
+    color: white;
+    font-size: 30px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.foot-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botao-produtos {
+    font-size: 20px !important;
+    font-family: 'Kanit', sans-serif !important;
+    font-weight: 400 !important;
+    color: #212d9a;
+}
+
+#botao-produtos:hover {
+    font-weight: bolder !important; 
+    transition: all 0.2s;
+    color:rgb(0, 81, 255);
+}
+
+#botao-topo {
+    color: #212d9a;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    font-size: 40px;
+    margin: none;
+    padding: none;
+}
+
+h2 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* CONTAINER DE SCROLL */
+.scroll-container {
+    /* width: 100%; */
+    height: 53px;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(121, 121, 121);
+    border-radius: 20px;
+}
+/* FIM CONTAINER SCROLL */
+
+/* WHATSAPP INÍCIO*/
+#wpp {
+    position: fixed;
+    bottom: 20px;
+    margin: 0 20px;
+    /* background: rgb(77, 231, 108); */
+    width: 230px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#wpp img {
+    width: 40px;
+    height: 40px;
+}
+
+.flutuar {
+    animation-name: flutuar;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+/* FIM WHATSAPP */
+
+
+/*INICIO CSS FORMULARIO*/
+input{
+    box-sizing: border-box;
+    border: solid 1px;
+    border-radius: 4px;
+    min-height: 4vh;
+}
+
+.formulario-campo-descricao{
+    min-height: 20vh;
+    box-sizing: border-box;
+    border: solid 1px;
+    border-radius: 4px;
+}
+
+
+.botao{
+    font-size: 1.2em;
+    background: #060606;
+    border: 0;
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.botao:hover {
+    background: #767579;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+/*FINAL CSS FORMULARIO*/
+
+
+@keyframes flutuar {
+    from {
+        transform: translate3d(0, 0, 0);
+        filter: brightness(100%);
+    }
+
+    to {
+        transform: translate3d(0, -15px, 0);
+        filter: brightness(85%);
+    }
+}
+
+@media(max-width: 767px) {
+
+    body {
+        width: 100%;
+
+    }
+
+    .logo {
+        width: 300px;
+    }
+
+    .div-logo {
+        text-align: center;
+    }
+
+    header {
+        color: white;
+        min-height: 50vh;
+        background-image: url(../img/BasílicaAP.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        background-attachment: fixed;
+    }
+
+    .vd-p {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+}
