@@ -173,6 +173,7 @@ p {
 
 
 /*INICIO CSS FORMULARIO*/
+
 input{
     box-sizing: border-box;
     border: solid 1px;
@@ -219,6 +220,8 @@ input{
     }
 }
 
+/* WHATSAPP FIM */
+
 @media(max-width: 767px) {
 
     body {
@@ -252,4 +255,96 @@ input{
         flex-direction: column;
     }
 
+
+
+/*INICIO CSS FORMULARIO*/
+/* .texto-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+    border: yellow 2px solid;
+    margin: 0 5%;
+}
+.texto-contato-titulo{
+    font-family: 'Prompt', sans-serif;
+}
+.texto-contato-paragrafo{
+    color: gray;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 5em;
+    margin-top: 1em;
+    margin: ;
+    border: solid 2px red;
+    max-width: max-content;
+}
+.formulario-campo{
+   max-width: max-content;
+}
+
+.formulario-campo label {
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+input{
+    min-width: 20%;
+    box-sizing: border-box;
+    border: solid 1px;
+    border-radius: 4px;
+    min-height: 4vh;
+}
+
+.formulario-campo-descricao{
+    min-width: 20%;
+    resize: vertical;
+    min-height: 10%;
+    box-sizing: border-box;
+    border: solid 1px;
+    border-radius: 4px;
+}
+
+label{
+    font-size: 20px;
+}
+
+.formulario-botao{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.botao{
+    border: solid 2px red;
+    min-width: 10%;
+    margin-left: 50vh;
+    margin-top: 5vh;
+    font-size: 1.2em;
+    background: #060606;
+    border: 0;
+    border-radius: 15px;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.botao:hover {
+    background: #767579;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+} */
+/*FINAL CSS FORMULARIO*/
 }
